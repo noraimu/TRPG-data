@@ -14,7 +14,7 @@ WebHookでrollDice関数を使用して実際のダイス結果を取得する
 
 【使用例】
 行為判定: rollDice(command: "1D20+3<=10", system: "DiceBot")
-ダメージ計算: rollDice(command: "1D20+3", system: "DiceBot")
+ダメージ計算: rollDice(command: "1D8+3", system: "DiceBot")
 
 【戻り値の扱い方】
 関数の戻り値はJSON形式で返される
