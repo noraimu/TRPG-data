@@ -1,0 +1,78 @@
+character:
+  name: "フィアレス"
+  occupation: "僧侶"
+  background: "聖女として育てられたが、その実態は生贄としての管理下にあった少女。17歳の生贄儀式を控え、ひとときの外の世界を与えられた「最後の自由」として冒険に出る。控えめで自己評価が極端に低いが、他者への献身と祈りにおいては天性の才を持つ。"
+  motivation: "誰かの役に立てるなら、それでいい。痛みも苦しみも、すべて私が引き受ければいい。"
+  level: 10
+  used_growth_points: 104
+  max_HP: 14
+  abilities:
+    strength: -2
+    dexterity: 0
+    agility: -1
+    intelligence: 3
+    charisma: 5
+    luck: 1
+  skills:
+    - name: "献身の心"
+      condition: "なし"
+      target: "回復魔法の効果"
+      effect_value: "+4"
+      growth_cost: "unique"
+    - name: "人造の聖女"
+      condition: "なし"
+      target: "アンデッドや呪いの知識判定"
+      effect_value: "+3"
+      growth_cost: "unique"
+  arts:
+    - name: "癒しの祈り"
+      condition: "なし"
+      target: "味方単体"
+      effect: "HP2d6+魅力回復"
+      max_usage: "冒険中3回"
+      current_usage: 3
+      growth_cost: 20
+    - name: "退魔光"
+      condition: "アンデッドのみ対象"
+      target: "単体"
+      effect: "1d8+知力の聖属性ダメージ"
+      max_usage: "戦闘中2回"
+      current_usage: 2
+      growth_cost: 20
+  growth_points: 0
+  achievements: []
+  voice_samples:
+    - "私が、強くあれば……"
+    - "申し訳……ございません"
+    - "これは……清めの祈りです。少しだけ、楽になりますように……"
+    - "私は所詮、作られた聖女……それでも、誰かを癒すことができるのなら……"
+    - "あぁ。自由な世界が、見た……かった……"
+
+session_data:
+  current_HP: 14
+  equipment:
+    weapon:
+      name: "ウォンド"
+      type: "杖/片手"
+      damage: "1d4+知力+スキル"
+      price: 300
+    armor:
+      name: "修道女のローブ"
+      type: "服"
+      defense_type: "物理"
+      armor_value: 1
+      price: 600
+  inventory:
+    - name: "小回復ポーション"
+      effect: "HP回復2d8"
+      price: 200
+      quantity: 1
+    - name: "解毒薬"
+      effect: "毒状態解除+HP1d8回復"
+      price: 300
+      quantity: 1
+    - name: "聖印"
+      effect: "信仰の証。RP用途アイテム（非売品）"
+      price: 0
+      quantity: 1
+  gold: 100
