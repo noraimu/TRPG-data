@@ -1,0 +1,89 @@
+character:
+  name: "エレノア・スターウィスパー"
+  occupation: "魔法使い"
+  background: "名門魔法学校の優秀な卒業生。理論は完璧だが、実地経験を積むために冒険者になった。学術的好奇心が強く、古代魔法の研究に情熱を注いでいる。"
+  motivation: "知識と魔法の探求。謎めいた遺跡や失われた魔法書を求めて旅をしている。好奇心旺盛だが、時に自分の研究に没頭しすぎる。"
+  level: 21
+  used_growth_points: 212
+  max_HP: 15
+  abilities:
+    strength: -1
+    dexterity: 1
+    agility: 0
+    intelligence: 4
+    charisma: 2
+    luck: 2
+  skills:
+    - name: "魔法理論"
+      condition: "なし"
+      target: "魔法攻撃の命中判定"
+      effect_value: "+3"
+      growth_cost: 30
+    - name: "古代魔法"
+      condition: "なし"
+      target: "魔法のダメージ判定"
+      effect_value: "+2"
+      growth_cost: 35
+    - name: "歴史知識"
+      condition: "なし"
+      target: "歴史や文献の判定"
+      effect_value: "+3"
+      growth_cost: 10
+    - name: "魔法感知"
+      condition: "なし"
+      target: "魔法の痕跡を感じる判定"
+      effect_value: "+3"
+      growth_cost: 8
+  arts:
+    - name: "マジックブースト"
+      condition: "なし"
+      target: "自身"
+      effect: "魔法攻撃を一つ選んでダメージ+5で使う"
+      max_usage: "戦闘中2回"
+      current_usage: 2
+      growth_cost: 20
+    - name: "ファイアボール+"
+      condition: "なし"
+      target: "範囲（小）"
+      effect: "2d8+知力の炎ダメージ"
+      max_usage: "戦闘中2回"
+      current_usage: 2
+      growth_cost: 40
+  growth_points: 2
+  achievements:
+    - 森のゴブリン退治を達成
+  voice_samples:
+    - "私はエレノア・スターウィスパー。学術の徒です"
+    - "おかしいですね。理論上はこれで完璧なはずなのに"
+    - "なるほど、興味深いですね"
+    - "では、少し実験してみましょうか"
+
+session_data:
+  current_HP: 15
+  equipment:
+    weapon:
+      name: "アーケインロッド"
+      type: "杖/片手"
+      damage: "1d7+知力+スキル"
+      price: 700
+    armor:
+      name: "魔術師のローブ"
+      type: "服"
+      defense_type: "物理"
+      armor_value: 3
+      price: 1500
+  inventory:
+    - name: "魔力結晶"
+      effect: "1回の魔法使用コスト無料"
+      price: 200
+      quantity: 2
+    - name: "魔法の書"
+      effect: "呪文研究判定+2"
+      price: 300
+      quantity: 1
+    - name: "小回復ポーション"
+      effect: "HP回復2d8"
+      price: 200
+      quantity: 2
+  gold: 525
+
