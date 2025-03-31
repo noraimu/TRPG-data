@@ -28,12 +28,17 @@ character:
     - name: "全力攻撃"
       condition: "なし"
       target: "近接"
-      effect: "威力+5の武器技"
+      effect: "威力+5の武器攻撃"
       max_usage: "戦闘中3回"
       current_usage: 3
       growth_cost: 20
   growth_points: 0
-  additional_background: "なし"
+  achievements: []
+  voice_samples:
+    - "剣士のアルドリックだ、よろしく頼む"
+    - "乗りかかった船だ。仕方ない"
+    - "悪いが、俺の剣はそんなに安くないぜ"
+    - "残念。ここは通行止めだ"
 
 session_data:
   current_HP: 21
