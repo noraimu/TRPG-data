@@ -3,11 +3,9 @@ character:
   occupation: "剣士"
   background: "幼い頃に見た冒険者に憧れ、自分も冒険者になった。自由気ままな冒険者として各地を旅している。剣の腕はあるがまだ駆け出し。"
   motivation: "世界中を見て回り、困っている人を助けたい。"
-
   level: 7
   used_growth_points: 78
   max_HP: 21
-
   abilities:
     strength: 4
     dexterity: 2
@@ -15,34 +13,30 @@ character:
     intelligence: 0
     charisma: -1
     luck: 2
-
   skills:
     - name: "剣術熟練"
       condition: "剣装備時"
-      effect: "剣の命中判定"
-      bonus: "+3"
-      cost: 10
+      target: "剣の命中判定"
+      effect_value: "+3"
+      growth_cost: 10
     - name: "剣術強化"
       condition: "剣装備時"
-      effect: "剣のダメージ判定"
-      bonus: "+3"
-      cost: 15
-
+      target: "剣のダメージ判定"
+      effect_value: "+3"
+      growth_cost: 15
   arts:
     - name: "全力攻撃"
       condition: "なし"
-      range: "近接"
-      effect: "威力+5の武器攻撃"
-      limit: "戦闘中3回"
-      level_required: 3
-      cost: 20
-
+      target: "近接"
+      effect: "威力+5の武器技"
+      max_usage: "戦闘中3回"
+      current_usage: 3
+      growth_cost: 20
   growth_points: 0
   additional_background: "なし"
 
 session_data:
   current_HP: 21
-
   equipment:
     weapon:
       name: "ロングソード"
@@ -55,7 +49,6 @@ session_data:
       defense_type: "物理"
       armor_value: 1
       price: 300
-
   inventory:
     - name: "小回復ポーション"
       effect: "HP回復2d8"
@@ -65,5 +58,4 @@ session_data:
       effect: "松明やロープなど"
       price: 100
       quantity: 1
-
   gold: 200
